@@ -560,3 +560,57 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ================= PROFILE PHOTO & CROPPING FIX ================= */
+
+/* Keep the image strictly contained in a responsive flex layout */
+.about-header-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.2rem;
+}
+
+/* The circular crop frame */
+.profile-pic-container {
+    width: 145px;
+    height: 145px;
+    min-width: 145px;       /* Prevents the image from shrinking */
+    max-width: 145px;
+    border-radius: 50%;     /* Makes it a perfect circle (change to 12px for rounded square) */
+    overflow: hidden;       /* Crops any overflowing image parts */
+    border: 3px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    background-color: #f1f5f9;
+}
+
+/* The actual image inside the crop frame */
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Crops and scales nicely without stretching */
+    object-position: center top; /* Centers on your face */
+    display: block;
+}
+
+/* Prevent ANY image from ever breaking the page layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+    .about-header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    
+    .profile-pic-container {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+    }
+}
+
