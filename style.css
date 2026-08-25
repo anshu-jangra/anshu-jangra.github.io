@@ -48,9 +48,9 @@ a:hover {
 }
 
 .nav-container {
-    max-width: 980px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 1.15rem 2rem;
+    padding: 1.25rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +58,7 @@ a:hover {
 
 .brand {
     font-size: 1.35rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #1a202c;
     letter-spacing: -0.3px;
 }
@@ -69,8 +69,8 @@ a:hover {
 
 .nav-links a {
     color: #4a5568;
-    margin-left: 1.5rem;
-    font-size: 0.94rem;
+    margin-left: 1.75rem;
+    font-size: 0.95rem;
     font-weight: 400;
     transition: color 0.15s ease;
 }
@@ -82,75 +82,40 @@ a:hover {
 
 /* ================= PAGE CONTAINER ================= */
 .main-wrapper {
-    max-width: 980px;
-    margin: 3rem auto;
+    max-width: 960px;
+    margin: 3.5rem auto;
     padding: 0 2rem;
 }
 
 .divider {
     border: none;
     border-top: 1px solid var(--border-subtle);
-    margin: 2.8rem 0;
+    margin: 3rem 0;
 }
 
-/* ================= HERO SECTION (Strict Top Alignment & Rectangular Photo) ================= */
+/* ================= HERO SECTION (MATCHES IMAGE) ================= */
 .hero-section {
     display: flex;
     gap: 3rem;
-    align-items: flex-start; /* Keeps image strictly at the top */
-}
-
-.hero-image-col {
-    flex: 0 0 240px;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
 }
 
+.hero-image-col {
+    flex: 0 0 280px;            /* Fixed width for clean proportional portrait */
+}
+
 .portrait-img {
-    width: 240px;
-    height: 310px;               /* Proportional rectangular portrait */
+    width: 280px;
+    height: 350px;
     object-fit: cover;
     object-position: center top;
-    border-radius: 8px;          /* Clean soft rectangle */
+    border-radius: 12px;        /* Clean soft rounded corners like screenshot */
     display: block;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid var(--border-subtle);
-    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
 }
 
-/* Quick contact list below photo */
-.quick-contact {
-    width: 100%;
-    font-size: 0.88rem;
-    color: var(--text-secondary);
-}
-
-.quick-contact p {
-    margin-bottom: 0.45rem;
-}
-
-.quick-contact i {
-    width: 18px;
-    color: var(--text-muted);
-}
-
-.cv-highlight {
-    font-weight: 600;
-    color: var(--link-color);
-}
-
-/* Right Column */
 .hero-text-col {
     flex: 1;
-}
-
-.page-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #1a202c;
-    letter-spacing: -0.5px;
-    margin-bottom: 1.2rem;
 }
 
 .hero-text-col p {
@@ -166,51 +131,26 @@ a:hover {
 }
 
 .phd-status {
-    color: #4338ca !important;
-    background-color: #f5f3ff;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    border-left: 3px solid #4338ca;
-    font-size: 0.98rem !important;
-    margin-top: 1.25rem;
+    color: #1a202c !important;
 }
 
-.phd-status-contact {
-    color: #4338ca;
-    font-size: 1.05rem;
-    font-weight: 500;
+.cv-link {
+    font-weight: 600;
 }
 
 /* ================= SECTIONS & LISTS ================= */
 .section {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .section-title {
     font-size: 1.45rem;
     font-weight: 700;
     color: #1a202c;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.5rem;
     letter-spacing: -0.3px;
 }
 
-/* Bullet Lists (Research Interests & Achievements) */
-.clean-bullet-list {
-    list-style: square inside;
-}
-
-.clean-bullet-list li {
-    margin-bottom: 0.65rem;
-    font-size: 0.98rem;
-    color: #2d3748;
-    line-height: 1.65;
-}
-
-.clean-bullet-list strong {
-    color: #1a202c;
-}
-
-/* Academic Structured Lists (Publications & Experience) */
 .academic-list {
     list-style: none;
 }
@@ -238,12 +178,6 @@ a:hover {
     line-height: 1.6;
 }
 
-.item-highlight {
-    font-size: 0.94rem;
-    color: #166534;
-    margin-top: 0.2rem;
-}
-
 .badge {
     display: inline-block;
     font-size: 0.75rem;
@@ -268,10 +202,24 @@ a:hover {
 .row-header .date {
     font-size: 0.9rem;
     color: var(--text-muted);
-    font-weight: 500;
 }
 
-/* ================= FOOTER ================= */
+/* Simple Bullet Lists */
+.simple-bullet-list {
+    list-style: square inside;
+}
+
+.simple-bullet-list li {
+    margin-bottom: 0.65rem;
+    font-size: 0.98rem;
+    color: #2d3748;
+}
+
+.simple-bullet-list strong {
+    color: #1a202c;
+}
+
+/* ================= FOOTER (MATCHES IMAGE) ================= */
 .footer {
     border-top: 1px solid var(--border-subtle);
     padding: 3rem 0;
@@ -280,7 +228,7 @@ a:hover {
 }
 
 .footer-container {
-    max-width: 980px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -332,26 +280,20 @@ a:hover {
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.75rem;
     }
 
     .hero-image-col {
         flex: none;
-        width: 100%;
-        align-items: center;
     }
 
     .portrait-img {
-        width: 200px;
-        height: 260px;
-    }
-
-    .quick-contact {
-        text-align: center;
+        width: 220px;
+        height: 275px;
     }
 
     .nav-links {
-        display: none;
+        display: none; /* Keeps mobile minimal */
     }
 
     .footer-container {
