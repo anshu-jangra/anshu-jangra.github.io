@@ -3,651 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Anshu | Mathematics Researcher</title>
-
+    <title>Anshu | Applied Mathematics & Scientific Machine Learning</title>
+    
+    <!-- Academic Typography & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- ================= NAVIGATION ================= -->
-
     <header>
         <nav class="navbar">
-
             <a href="#home" class="logo">Anshu</a>
-
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#research">Research</a>
                 <a href="#publications">Publications</a>
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
+                <a href="#achievements">Achievements</a>
                 <a href="#contact">Contact</a>
             </div>
-
         </nav>
     </header>
 
+    <main class="container">
 
-    <!-- ================= HOME ================= -->
-
-    <section id="home" class="hero">
-
-        <div class="hero-text">
-
-            <p class="intro">Hello, I am</p>
-
-            <h1>Anshu</h1>
-
-            <h2>Mathematics Researcher</h2>
-
-            <p class="affiliation">
-                Mathematics · Scientific Machine Learning · PDEs
-            </p>
-
-            <p class="hero-description">
-                Interested in efficient optimization strategies, deep learning,
-                scientific machine learning, partial differential equations,
-                and numerical methods.
-            </p>
-
-            <div class="buttons">
-
-                <a href="#research" class="button primary">
-                    Explore Research
-                </a>
-
-                <a href="assets/cv.pdf" class="button secondary" target="_blank">
-                    Download CV
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-image">
-
-            <img src="assets/profile.jpeg" alt="Anshu">
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="section">
-
-        <div class="section-title">
-            <p>About Me</p>
-            <h2>About</h2>
-        </div>
-
-        <div class="about-content">
-
-            <p>
-                I am a Mathematics researcher with an academic background
-                in Mathematics and a strong interest in computational
-                and data-driven approaches to mathematical problems.
-            </p>
-
-            <p>
-                My research interests include efficient optimization
-                strategies, deep learning, scientific machine learning,
-                and partial differential equations.
-            </p>
-
-            <p>
-                My Master's research focused on training Physics-Informed
-                Neural Networks using hybrid optimization techniques.
-                I investigated Particle Swarm Optimization combined with
-                gradient-based optimization for solving different classes
-                of partial differential equations.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= RESEARCH ================= -->
-
-    <section id="research" class="section light-section">
-
-        <div class="section-title">
-            <p>Research Interests</p>
-            <h2>Research</h2>
-        </div>
-
-        <div class="research-grid">
-
-            <div class="research-card">
-                <h3>Scientific Machine Learning</h3>
-                <p>
-                    Applying machine learning techniques to mathematical
-                    and scientific problems.
-                </p>
-            </div>
-
-            <div class="research-card">
-                <h3>Physics-Informed Neural Networks</h3>
-                <p>
-                    Neural-network based approaches for solving
-                    partial differential equations.
-                </p>
-            </div>
-
-            <div class="research-card">
-                <h3>Partial Differential Equations</h3>
-                <p>
-                    Computational approaches for solving and analyzing
-                    differential equations.
-                </p>
-            </div>
-
-            <div class="research-card">
-                <h3>Optimization</h3>
-                <p>
-                    Efficient optimization strategies for scientific
-                    machine learning and neural-network training.
-                </p>
-            </div>
-
-            <div class="research-card">
-                <h3>Deep Learning</h3>
-                <p>
-                    Exploring deep learning methods for mathematical
-                    and scientific applications.
-                </p>
-            </div>
-
-            <div class="research-card">
-                <h3>Numerical Methods</h3>
-                <p>
-                    Numerical schemes and computational techniques
-                    for differential equations.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= RESEARCH JOURNEY ================= -->
-
-    <section class="section">
-
-        <div class="section-title">
-            <p>Research Journey</p>
-            <h2>Research Timeline</h2>
-        </div>
-
-        <div class="timeline">
-
-
-            <!-- MSc Research -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-date">
-                    2023 – 2025
+        <!-- ================= PROFILE / ABOUT ================= -->
+        <section id="about" class="profile-section">
+            
+            <div class="sidebar-profile">
+                <div class="avatar-wrapper">
+                    <img src="assets/profile.jpeg" alt="Anshu" class="profile-img" onerror="this.src='https://via.placeholder.com/180'">
                 </div>
+                
+                <h1 class="author-name">Anshu</h1>
+                <p class="author-title">Mathematics Researcher</p>
+                <p class="author-tagline">M.Sc. Mathematics (Gold Medalist)<br>NIT Kurukshetra</p>
 
-                <div class="timeline-content">
+                <ul class="profile-links">
+                    <li><i class="fa-solid fa-location-dot"></i> Haryana, India</li>
+                    <li><a href="mailto:toanshuneelam@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                    <li><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://scholar.google.com" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a></li>
+                    <li><a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="assets/cv.pdf" target="_blank" class="cv-link"><i class="fa-regular fa-file-pdf"></i> Curriculum Vitae</a></li>
+                </ul>
+            </div>
 
-                    <h3>Master's Research</h3>
+            <div class="main-bio">
+                <h2>About Me</h2>
+                
+                <p>
+                    I am an applied mathematics researcher specializing in <strong>Scientific Machine Learning (SciML)</strong>, 
+                    <strong>partial differential equations (PDEs)</strong>, and <strong>hybrid optimization mechanics</strong>. 
+                    I completed my Master of Science in Mathematics at the <strong>National Institute of Technology (NIT) Kurukshetra</strong>, 
+                    graduating as the <strong>Institute Gold Medalist</strong> (CGPA 9.54/10.0).
+                </p>
 
-                    <h4>
-                        PINNs with Hybrid Optimization
-                    </h4>
+                <p>
+                    My research focuses on bridging rigorous analytical theory with modern data-driven computation. 
+                    During my Master's dissertation under the supervision of <strong>Dr. Raghvendra Pratap Singh</strong>, 
+                    I investigated foundational optimization pathologies in <strong>Physics-Informed Neural Networks (PINNs)</strong>. 
+                    To overcome gradient stiffness, ill-conditioned loss landscapes, and premature convergence in non-convex regimes, 
+                    I designed hybrid optimization frameworks combining population-based global heuristics (Particle Swarm Optimization) 
+                    with local gradient descent for elliptic, parabolic, and hyperbolic systems.
+                </p>
 
-                    <p>
-                        Investigated Particle Swarm Optimization and
-                        gradient-based optimization techniques for
-                        training Physics-Informed Neural Networks to
-                        solve elliptic, parabolic, and hyperbolic
-                        partial differential equations.
+                <p>
+                    My subsequent work has extended into high-dimensional nonlinear dynamics (3D & 5D Burgers' and Navier–Stokes systems) 
+                    and boundary-layer asymptotics in singularly perturbed differential-difference systems via exponential fitting schemes. 
+                    Looking forward, I aim to develop mathematically grounded, provably stable, and structure-preserving 
+                    <strong>Neural Operators (FNOs, DeepONets)</strong> and <strong>Reduced-Order Models (ROMs)</strong> for multiscale dynamical systems.
+                </p>
+
+                <!-- Research Interests -->
+                <div class="bio-interests">
+                    <h3>Research Interests</h3>
+                    <ul class="interest-list">
+                        <li><strong>Scientific Machine Learning:</strong> Physics-Informed Neural Networks (PINNs), Neural Operators (FNOs, DeepONets), Operator Learning</li>
+                        <li><strong>Differential Equations:</strong> Nonlinear PDEs, High-Dimensional Systems (3D/5D Burgers' & Navier–Stokes), Singular Perturbations</li>
+                        <li><strong>Optimization & Numerical Analysis:</strong> Hybrid Optimization (PSO + Gradient Refinement), Loss Landscape Analysis, Exponential Fitting Schemes</li>
+                        <li><strong>Structure-Preserving Learning:</strong> Invariant & Conservation Law Preservation, Inverse Problems & Identifiability</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="divider">
+
+        <!-- ================= PUBLICATIONS ================= -->
+        <section id="publications" class="section">
+            <h2>Publications & Preprints</h2>
+
+            <div class="publication-item">
+                <span class="pub-badge under-review">Under Review</span>
+                <div class="pub-details">
+                    <h3 class="pub-title">
+                        A Hybrid Particle Swarm and Gradient-Based Optimization Technique for Training Physics-Informed Neural Networks to Solve Partial Differential Equations
+                    </h3>
+                    <p class="pub-authors"><strong>Anshu</strong>, Raghvendra Pratap Singh</p>
+                    <p class="pub-desc">
+                        Proposes a global-local hybrid heuristic to eliminate gradient pathologies and bad local minima in non-convex PINN loss landscapes across elliptic, parabolic, and hyperbolic PDEs.
                     </p>
-
                 </div>
-
             </div>
 
-
-            <!-- High Dimensional PDE -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-date">
-                    June 2025 – December 2025
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>High-Dimensional PDE Research</h3>
-
-                    <h4>
-                        Three-Dimensional and Five-Dimensional Problems
-                    </h4>
-
-                    <p>
-                        Worked on high-dimensional partial differential
-                        equations, including 3D and 5D Burgers' and
-                        Navier–Stokes equations.
+            <div class="publication-item">
+                <span class="pub-badge under-review">Under Review</span>
+                <div class="pub-details">
+                    <h3 class="pub-title">
+                        A Numerical Scheme Utilizing Exponential Fitting to Solve a Singularly Perturbed Differential-Difference Equation Featuring a Boundary Layer Phenomenon
+                    </h3>
+                    <p class="pub-authors"><strong>Anshu</strong>, et al.</p>
+                    <p class="pub-desc">
+                        Develops an asymptotic-preserving exponential fitting numerical method to accurately capture sharp boundary and interior layers in parameter-dependent delay differential equations.
                     </p>
-
                 </div>
-
             </div>
+        </section>
 
+        <hr class="divider">
 
-            <!-- Second Research -->
+        <!-- ================= RESEARCH PROJECTS ================= -->
+        <section id="projects" class="section">
+            <h2>Selected Research Projects</h2>
 
-            <div class="timeline-item">
-
-                <div class="timeline-date">
-                    January 2026 – July 2026
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>Numerical Analysis Research</h3>
-
-                    <h4>
-                        Singularly Perturbed Differential-Difference Equation
-                    </h4>
-
+            <div class="card-grid">
+                
+                <div class="card">
+                    <div class="card-tag">Master's Thesis</div>
+                    <h3>Hybrid Optimization for Physics-Informed Neural Networks</h3>
                     <p>
-                        Worked on a numerical scheme utilizing exponential
-                        fitting to solve a singularly perturbed
-                        differential-difference equation featuring a
-                        boundary layer phenomenon.
+                        Developed a coupled PSO-ADAM/L-BFGS training architecture mitigating spectral bias and gradient stagnation when solving canonical linear and nonlinear differential equations.
                     </p>
+                    <div class="tags">
+                        <span>SciML</span>
+                        <span>PINNs</span>
+                        <span>PSO</span>
+                        <span>Loss Landscapes</span>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="card-tag">High-Dimensional PDEs</div>
+                    <h3>High-Dimensional Flow Simulation (3D & 5D)</h3>
+                    <p>
+                        Investigated the scaling limits, computational residual costs, and expressivity of deep surrogate models on 3D and 5D Burgers' equations and incompressible Navier–Stokes flow.
+                    </p>
+                    <div class="tags">
+                        <span>High-Dim PDEs</span>
+                        <span>Navier-Stokes</span>
+                        <span>Burgers' Eq</span>
+                        <span>PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-tag">Asymptotic Analysis</div>
+                    <h3>Exponential-Fitting for Perturbed Systems</h3>
+                    <p>
+                        Formulated and analyzed uniformly convergent numerical discretization schemes tailored for stiff differential-difference equations with boundary layer phenomena.
+                    </p>
+                    <div class="tags">
+                        <span>Numerical Analysis</span>
+                        <span>Singular Perturbation</span>
+                        <span>Boundary Layers</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-tag">Scientific Computing</div>
+                    <h3>Modular Numerical Analysis Python Suite</h3>
+                    <p>
+                        Engineered a clean, modular Python computational package implementing high-order root-finding, numerical quadrature, and initial/boundary value ODE-PDE solvers.
+                    </p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>NumPy</span>
+                        <span>SciPy</span>
+                        <span>Algorithms</span>
+                    </div>
                 </div>
 
             </div>
+        </section>
 
-        </div>
+        <hr class="divider">
 
-    </section>
-
-
-    <!-- ================= PUBLICATIONS ================= -->
-
-    <section id="publications" class="section light-section">
-
-        <div class="section-title">
-            <p>Research Output</p>
-            <h2>Publications</h2>
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">01</span>
-
-            <div>
-
-                <h3>
-                    A Hybrid Particle Swarm and Gradient-Based Optimization
-                    Technique for Training Physics-Informed Neural Networks
-                    to Solve Partial Differential Equations
-                </h3>
-
-                <p class="status">
-                    Under Review
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="publication">
-
-            <span class="publication-number">02</span>
-
-            <div>
-
-                <h3>
-                    A numerical scheme utilizing exponential fitting to solve
-                    a singularly perturbed differential-difference equation
-                    featuring a boundary layer phenomenon
-                </h3>
-
-                <p class="status">
-                    Under Review
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects" class="section">
-
-        <div class="section-title">
-            <p>Selected Research Work</p>
-            <h2>Projects</h2>
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <div class="project-card">
-
-                <p class="project-type">
-                    Master's Research
-                </p>
-
-                <h3>
-                    PINNs with Hybrid Optimization
-                </h3>
-
-                <p>
-                    Development of a hybrid optimization strategy combining
-                    Particle Swarm Optimization with gradient-based methods
-                    for training Physics-Informed Neural Networks.
-                </p>
-
-                <div class="tags">
-                    <span>PINNs</span>
-                    <span>PSO</span>
-                    <span>Deep Learning</span>
-                    <span>PDEs</span>
-                </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <p class="project-type">
-                    High-Dimensional PDEs
-                </p>
-
-                <h3>
-                    3D & 5D PDE Problems
-                </h3>
-
-                <p>
-                    Study of high-dimensional Burgers' and Navier–Stokes
-                    equations using computational and machine-learning
-                    based approaches.
-                </p>
-
-                <div class="tags">
-                    <span>3D</span>
-                    <span>5D</span>
-                    <span>Burgers'</span>
-                    <span>Navier–Stokes</span>
-                </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <p class="project-type">
-                    Numerical Analysis
-                </p>
-
-                <h3>
-                    Exponential-Fitting Numerical Scheme
-                </h3>
-
-                <p>
-                    Numerical treatment of a singularly perturbed
-                    differential-difference equation with a boundary
-                    layer phenomenon.
-                </p>
-
-                <div class="tags">
-                    <span>Numerical Methods</span>
-                    <span>Differential Equations</span>
-                    <span>Boundary Layers</span>
-                </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <p class="project-type">
-                    Scientific Computing
-                </p>
-
-                <h3>
-                    Numerical Methods Package
-                </h3>
-
-                <p>
-                    Developed a modular Python package implementing
-                    selected numerical methods as part of Master's
-                    coursework.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Numerical Methods</span>
-                    <span>Scientific Computing</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= EDUCATION ================= -->
-
-    <section id="education" class="section light-section">
-
-        <div class="section-title">
-            <p>Academic Background</p>
+        <!-- ================= EDUCATION ================= -->
+        <section id="education" class="section">
             <h2>Education</h2>
-        </div>
 
-
-        <div class="education-item">
-
-            <div class="education-year">
-                2023 – 2025
+            <div class="timeline-entry">
+                <div class="entry-header">
+                    <h3>National Institute of Technology Kurukshetra</h3>
+                    <span class="entry-date">2023 – 2025</span>
+                </div>
+                <p class="entry-subtitle">Master of Science (M.Sc.) in Mathematics</p>
+                <p class="entry-highlight"><strong>Institute Gold Medalist</strong> · CGPA: 9.5422 / 10.0</p>
+                <p class="entry-detail">Advisor: Dr. Raghvendra Pratap Singh | Focus: Scientific Machine Learning & PDEs</p>
             </div>
 
-            <div>
-
-                <h3>
-                    National Institute of Technology Kurukshetra
-                </h3>
-
-                <p>
-                    Master of Science in Mathematics
-                </p>
-
-                <strong>
-                    Gold Medalist · CGPA 9.5422
-                </strong>
-
+            <div class="timeline-entry">
+                <div class="entry-header">
+                    <h3>University of Delhi</h3>
+                    <span class="entry-date">2020 – 2023</span>
+                </div>
+                <p class="entry-subtitle">Bachelor of Science (B.Sc. Hons.) in Mathematics</p>
+                <p class="entry-highlight">First Division · CGPA: 9.324 / 10.0</p>
             </div>
+        </section>
 
-        </div>
+        <hr class="divider">
 
+        <!-- ================= HONORS & ACHIEVEMENTS ================= -->
+        <section id="achievements" class="section">
+            <h2>Honors & Key Achievements</h2>
 
-        <div class="education-item">
+            <ul class="styled-list">
+                <li><strong>Gold Medalist (M.Sc. Mathematics):</strong> Ranked 1st in the graduating class at NIT Kurukshetra (CGPA 9.54).</li>
+                <li><strong>GATE Mathematics 2025:</strong> All India Rank <strong>AIR 755</strong> (Top 5.73% nationally).</li>
+                <li><strong>CSIR NET Mathematics:</strong> Qualified in <strong>December 2024</strong> & <strong>June 2024</strong> (Category 3).</li>
+                <li><strong>NPTEL Number Theory:</strong> Awarded Elite + <strong>Top 5%</strong> nationwide.</li>
+                <li><strong>National Competitive Examinations:</strong> Qualified <strong>IIT JAM 2023</strong> and <strong>CUET-PG 2023</strong> in Mathematics.</li>
+            </ul>
+        </section>
 
-            <div class="education-year">
-                2020 – 2023
+        <hr class="divider">
+
+        <!-- ================= WORKSHOPS & SERVICE ================= -->
+        <section id="activities" class="section">
+            <h2>Workshops & Academic Service</h2>
+
+            <div class="two-col-grid">
+                <div>
+                    <h3>Workshops & Training</h3>
+                    <ul class="bullet-list">
+                        <li><strong>University of Manchester, UK:</strong> <em>Surrogates and Dimension Reduction in Scientific Machine Learning</em>.</li>
+                        <li><strong>NIT Kurukshetra:</strong> <em>Recent Advances in Scientific Computing</em> (5-Day Workshop).</li>
+                        <li><strong>NIT Kurukshetra:</strong> <em>Diffusion Driven Instability - Non-Linear PDEs</em>.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Academic Leadership</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Education Outreach Head:</strong> <em>Anant - The Mathematical Society</em>, NIT Kurukshetra (2024–2025).</li>
+                        <li><strong>Team Head:</strong> <em>Techspardha '25</em> (Annual Technical Festival, NIT Kurukshetra).</li>
+                        <li><strong>Language Proficiency:</strong> English (IELTS C1 Level), Hindi (C2).</li>
+                    </ul>
+                </div>
             </div>
+        </section>
 
-            <div>
-
-                <h3>
-                    University of Delhi
-                </h3>
-
-                <p>
-                    Bachelor of Science in Mathematics
-                </p>
-
-                <strong>
-                    CGPA 9.324
-                </strong>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ACHIEVEMENTS ================= -->
-
-    <section class="section">
-
-        <div class="section-title">
-            <p>Academic Highlights</p>
-            <h2>Achievements</h2>
-        </div>
-
-        <div class="achievement-grid">
-
-            <div class="achievement">
-                <strong>GATE Mathematics 2025</strong>
-                <span>AIR 755 · Top 5.7322%</span>
-            </div>
-
-            <div class="achievement">
-                <strong>CSIR NET Mathematics</strong>
-                <span>Category 3 · December 2024</span>
-            </div>
-
-            <div class="achievement">
-                <strong>CSIR NET Mathematics</strong>
-                <span>Category 3 · June 2024</span>
-            </div>
-
-            <div class="achievement">
-                <strong>NPTEL Number Theory</strong>
-                <span>Top 5%</span>
-            </div>
-
-            <div class="achievement">
-                <strong>IIT JAM Mathematics</strong>
-                <span>Qualified · 2023</span>
-            </div>
-
-            <div class="achievement">
-                <strong>CUET PG Mathematics</strong>
-                <span>Qualified · 2023</span>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section class="section light-section">
-
-        <div class="section-title">
-            <p>Technical Background</p>
-            <h2>Skills</h2>
-        </div>
-
-        <div class="skills">
-
-            <div>
-                <h3>Mathematics</h3>
-                <p>
-                    Partial Differential Equations · Numerical Analysis ·
-                    Optimization
-                </p>
-            </div>
-
-            <div>
-                <h3>Scientific Machine Learning</h3>
-                <p>
-                    Physics-Informed Neural Networks · Deep Learning
-                </p>
-            </div>
-
-            <div>
-                <h3>Programming</h3>
-                <p>
-                    Python · PyTorch · NumPy · SciPy
-                </p>
-            </div>
-
-            <div>
-                <h3>Research Tools</h3>
-                <p>
-                    LaTeX · Git · Jupyter
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section id="contact" class="contact-section">
-
-        <p>Get in Touch</p>
-
-        <h2>Let's Connect</h2>
-
-        <p>
-            I am interested in research discussions and collaborations
-            in mathematics, scientific machine learning, PDEs,
-            optimization, and numerical methods.
-        </p>
-
-        <div class="contact-links">
-
-            <a href="mailto:toanshuneelam@gmail.com">
-                Email
-            </a>
-
-            <a href="#" target="_blank">
-                LinkedIn
-            </a>
-
-            <a href="#" target="_blank">
-                GitHub
-            </a>
-
-        </div>
-
-    </section>
-
+    </main>
 
     <!-- ================= FOOTER ================= -->
-
     <footer>
-
-        <p>
-            © 2026 Anshu · Mathematics Research
-        </p>
-
+        <div class="footer-content">
+            <p>© 2026 Anshu. Built with clean HTML & CSS.</p>
+        </div>
     </footer>
-
-
-    <script src="script.js"></script>
 
 </body>
 </html>
