@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anshu | Mathematics Researcher</title>
     
-    <!-- Clean Minimalist Typography -->
+    <!-- Clean Academic Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
@@ -23,11 +23,13 @@
         <div class="nav-container">
             <a href="#" class="brand">Anshu</a>
             <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
                 <a href="#publications">Publications</a>
-                <a href="#projects">Projects</a>
+                <a href="#experience">Work Experience</a>
                 <a href="#education">Education</a>
                 <a href="#achievements">Achievements</a>
-                <a href="#activities">Workshops</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -35,44 +37,47 @@
     <!-- ================= MAIN CONTENT ================= -->
     <main class="main-wrapper">
 
-        <!-- HERO / BIO SECTION (Side-by-Side like in image) -->
-        <section class="hero-section">
+        <!-- HERO / ABOUT SECTION (Top-Aligned Side-by-Side) -->
+        <section id="about" class="hero-section">
             
-            <!-- Left: Rounded Vertical Photo -->
+            <!-- Left Column: Rectangular Portrait Image -->
             <div class="hero-image-col">
-                <img src="assets/profile.jpeg" alt="Anshu" class="portrait-img" onerror="this.src='https://via.placeholder.com/320x400'">
+                <img src="assets/profile.jpeg" alt="Anshu" class="portrait-img" onerror="this.src='https://via.placeholder.com/260x330'">
+                
+                <div class="quick-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> Haryana, India</p>
+                    <p><a href="mailto:toanshuneelam@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></p>
+                    <p><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+                    <p><a href="https://scholar.google.com" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a></p>
+                    <p><a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></p>
+                    <p><a href="assets/cv.pdf" target="_blank" class="cv-highlight"><i class="fa-regular fa-file-pdf"></i> Download CV</a></p>
+                </div>
             </div>
 
-            <!-- Right: Bio Text -->
+            <!-- Right Column: Bio Narrative -->
             <div class="hero-text-col">
+                <h1 class="page-title">About Me</h1>
+
                 <p>
-                    Hi, I am a Mathematics researcher specializing in <strong>Scientific Machine Learning (SciML)</strong>, 
+                    I am a Mathematics researcher specializing in <strong>Scientific Machine Learning (SciML)</strong>, 
                     <strong>partial differential equations (PDEs)</strong>, and <strong>hybrid optimization mechanics</strong>. 
                     I completed my Master of Science in Mathematics at the 
                     <a href="https://nitkkr.ac.in" target="_blank">National Institute of Technology, Kurukshetra</a> (2023–2025), 
-                    where I was awarded the <strong>Institute Gold Medal</strong> (CGPA 9.54/10.0), under the supervision of 
-                    <a href="#" target="_blank">Dr. Raghvendra Pratap Singh</a>.
+                    where I was awarded the <strong>Institute Gold Medal</strong> (CGPA 9.5422/10.0), under the supervision of 
+                    <strong>Dr. Raghvendra Pratap Singh</strong>.
                 </p>
 
                 <p>
                     Prior to this, I completed my undergraduate studies with a B.Sc. (Honours) in Mathematics from the 
-                    <a href="https://www.du.ac.in" target="_blank">University of Delhi</a> in 2023 with First Division (CGPA 9.32).
+                    <a href="https://www.du.ac.in" target="_blank">University of Delhi</a> (2020–2023) with First Division (CGPA 9.324).
                 </p>
 
                 <p>
-                    My primary research interests lie in the theoretical and computational aspects of 
-                    <strong>Physics-Informed Neural Networks (PINNs)</strong>, <strong>Neural Operators (FNOs, DeepONets)</strong>, 
-                    and <strong>hybrid optimization strategies</strong> that couple global metaheuristics with gradient-based methods 
-                    to overcome non-convex loss landscapes. Additionally, I work on high-dimensional systems (3D & 5D Burgers' and Navier–Stokes equations) 
-                    and boundary-layer phenomena in singularly perturbed differential-difference equations.
+                    My research trajectory is driven by moving beyond empirical black-box machine learning to establish rigorous mathematical foundations, optimization mechanics, and generalization guarantees for neural differential equation solvers. In my Master’s research, I investigated gradient pathologies and non-convex loss landscapes in <strong>Physics-Informed Neural Networks (PINNs)</strong>, developing hybrid optimization frameworks combining global heuristics (Particle Swarm Optimization) with gradient-based local refinement to ensure robust convergence. Following this, I extended computational frameworks to high-dimensional systems (3D & 5D Burgers' and Navier–Stokes equations) and singularly perturbed differential-difference equations via exponential-fitting schemes.
                 </p>
 
                 <p class="phd-status">
-                    I am actively seeking <strong>Ph.D. positions</strong> in Applied Mathematics, Scientific Computing, and Operator Learning starting in 2025/2026.
-                </p>
-
-                <p class="cv-line">
-                    Here is a link to my <a href="assets/cv.pdf" target="_blank" class="cv-link">CV</a>.
+                    <i class="fa-solid fa-circle-check"></i> I am actively looking for a <strong>Ph.D. position</strong> in Applied Mathematics, Scientific Computing, and Operator Learning.
                 </p>
             </div>
 
@@ -80,9 +85,26 @@
 
         <hr class="divider">
 
+        <!-- ================= RESEARCH INTERESTS (Clean Bulleted List) ================= -->
+        <section id="research" class="section">
+            <h2 class="section-title">Research Interests</h2>
+
+            <ul class="clean-bullet-list">
+                <li><strong>Scientific Machine Learning (SciML)</strong> & Physics-Informed Neural Networks (PINNs)</li>
+                <li><strong>Neural Operators</strong> (FNOs, DeepONets) & Operator Learning</li>
+                <li><strong>Nonlinear & High-Dimensional PDEs</strong> (3D & 5D Burgers' and Navier–Stokes Equations)</li>
+                <li><strong>Hybrid Optimization Strategies</strong> (Metaheuristic Global Search + Gradient Refinement)</li>
+                <li><strong>Optimization Dynamics & Loss Landscapes</strong> in Deep Learning</li>
+                <li><strong>Numerical Analysis & Singular Perturbations</strong> (Exponential Fitting Schemes & Boundary Layer Phenomena)</li>
+                <li><strong>Reduced-Order Modeling (ROM)</strong> & Structure-Preserving Learning</li>
+            </ul>
+        </section>
+
+        <hr class="divider">
+
         <!-- ================= PUBLICATIONS ================= -->
         <section id="publications" class="section">
-            <h2 class="section-title">Publications & Preprints</h2>
+            <h2 class="section-title">Publications</h2>
 
             <ul class="academic-list">
                 <li>
@@ -90,10 +112,7 @@
                         <strong>A Hybrid Particle Swarm and Gradient-Based Optimization Technique for Training Physics-Informed Neural Networks to Solve Partial Differential Equations</strong>
                     </p>
                     <p class="item-meta">
-                        <strong>Anshu</strong>, Raghvendra Pratap Singh &nbsp;·&nbsp; <span class="badge">Under Review</span>
-                    </p>
-                    <p class="item-desc">
-                        Investigates gradient pathologies and bad local minima in PINN training, introducing a coupled PSO and gradient-descent scheme for elliptic, parabolic, and hyperbolic PDEs.
+                        <strong>Anshu</strong>, Dr. Raghvendra Pratap Singh &nbsp;·&nbsp; <span class="badge">Under Review</span>
                     </p>
                 </li>
 
@@ -104,38 +123,58 @@
                     <p class="item-meta">
                         <strong>Anshu</strong>, et al. &nbsp;·&nbsp; <span class="badge">Under Review</span>
                     </p>
-                    <p class="item-desc">
-                        Develops a uniformly convergent exponential-fitting numerical scheme to accurately resolve boundary and interior layers in parameter-dependent delay differential equations.
-                    </p>
                 </li>
             </ul>
         </section>
 
         <hr class="divider">
 
-        <!-- ================= PROJECTS ================= -->
-        <section id="projects" class="section">
-            <h2 class="section-title">Selected Research Projects</h2>
+        <!-- ================= WORK / RESEARCH EXPERIENCE ================= -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Work / Research Experience</h2>
 
             <ul class="academic-list">
                 <li>
-                    <p class="item-title"><strong>PINNs with Hybrid Optimization (Master's Thesis)</strong></p>
+                    <div class="row-header">
+                        <strong>Singularly Perturbed Differential-Difference Equation Research</strong>
+                        <span class="date">Jan 2026 – Jul 2026</span>
+                    </div>
+                    <p class="item-meta">Numerical Analysis & Boundary Layer Asymptotics</p>
                     <p class="item-desc">
-                        Designed and benchmarked global-local hybrid optimizers (PSO + ADAM/L-BFGS) to stabilize loss landscape convergence and eliminate stiffness in scientific neural networks.
+                        Formulated and analyzed uniformly convergent numerical discretization schemes utilizing exponential fitting to accurately resolve boundary and interior layers in parameter-dependent delay differential equations.
                     </p>
                 </li>
 
                 <li>
-                    <p class="item-title"><strong>High-Dimensional Computational PDEs (3D & 5D)</strong></p>
+                    <div class="row-header">
+                        <strong>High-Dimensional PDE Research (3D & 5D Problems)</strong>
+                        <span class="date">Jul 2025 – Dec 2025</span>
+                    </div>
+                    <p class="item-meta">Computational PDEs & Machine Learning</p>
                     <p class="item-desc">
-                        Explored network expressivity, point-wise residual scalability, and solution dynamics on 3D and 5D Burgers' equations and Navier–Stokes flow.
+                        Investigated computational residual scaling and neural network expressivity on three-dimensional and five-dimensional Burgers' and Navier–Stokes fluid equations.
                     </p>
                 </li>
 
                 <li>
-                    <p class="item-title"><strong>Modular Numerical Analysis Python Package</strong></p>
+                    <div class="row-header">
+                        <strong>PINNs with Hybrid Optimization (Master's Dissertation)</strong>
+                        <span class="date">Jan 2025 – Jul 2025</span>
+                    </div>
+                    <p class="item-meta">Scientific Machine Learning · Supervised by Dr. Raghvendra Pratap Singh</p>
                     <p class="item-desc">
-                        Implemented an object-oriented Python library for high-order quadrature, iterative root finding, and boundary-value ODE/PDE numerical solvers.
+                        Investigated Particle Swarm Optimization coupled with gradient-based methods (ADAM/L-BFGS) to stabilize loss landscape traversal and eliminate stiffness in PINNs for elliptic, parabolic, and hyperbolic PDEs.
+                    </p>
+                </li>
+
+                <li>
+                    <div class="row-header">
+                        <strong>Numerical Methods Python Package Development</strong>
+                        <span class="date">Aug 2024 – Dec 2024</span>
+                    </div>
+                    <p class="item-meta">Scientific Computing & Software</p>
+                    <p class="item-desc">
+                        Developed a modular Python package implementing standard and high-order numerical algorithms for quadrature, root-finding, and differential equations.
                     </p>
                 </li>
             </ul>
@@ -153,8 +192,8 @@
                         <strong>National Institute of Technology Kurukshetra</strong>
                         <span class="date">2023 – 2025</span>
                     </div>
-                    <p class="item-meta">Master of Science in Mathematics · <strong>Institute Gold Medalist (CGPA: 9.5422)</strong></p>
-                    <p class="item-desc">Thesis Advisor: Dr. Raghvendra Pratap Singh</p>
+                    <p class="item-meta">Master of Science in Mathematics</p>
+                    <p class="item-highlight"><i class="fa-solid fa-award"></i> <strong>Institute Gold Medalist · CGPA: 9.5422 / 10.0</strong></p>
                 </li>
 
                 <li>
@@ -162,7 +201,8 @@
                         <strong>University of Delhi</strong>
                         <span class="date">2020 – 2023</span>
                     </div>
-                    <p class="item-meta">Bachelor of Science (Hons.) in Mathematics · <strong>First Division (CGPA: 9.324)</strong></p>
+                    <p class="item-meta">Bachelor of Science (Hons.) in Mathematics</p>
+                    <p class="item-highlight"><i class="fa-solid fa-check"></i> First Division with Distinction · CGPA: 9.324 / 10.0</p>
                 </li>
             </ul>
         </section>
@@ -171,37 +211,49 @@
 
         <!-- ================= ACHIEVEMENTS ================= -->
         <section id="achievements" class="section">
-            <h2 class="section-title">Achievements & Honors</h2>
+            <h2 class="section-title">Academic Achievements</h2>
 
-            <ul class="simple-bullet-list">
-                <li><strong>Gold Medalist:</strong> Ranked 1st in M.Sc. Mathematics, NIT Kurukshetra.</li>
+            <ul class="clean-bullet-list">
+                <li><strong>Gold Medalist:</strong> 1st Rank in M.Sc. Mathematics at NIT Kurukshetra (CGPA 9.5422).</li>
                 <li><strong>GATE Mathematics 2025:</strong> All India Rank <strong>AIR 755</strong> (Top 5.7322%).</li>
                 <li><strong>CSIR NET Mathematics:</strong> Qualified in December 2024 & June 2024 (Category 3).</li>
-                <li><strong>NPTEL Number Theory:</strong> Awarded Elite + <strong>Top 5%</strong> nationwide.</li>
-                <li><strong>National Exams:</strong> Qualified <strong>IIT JAM 2023</strong> and <strong>CUET-PG 2023</strong> in Mathematics.</li>
+                <li><strong>NPTEL Number Theory:</strong> Elite Certification + <strong>Top 5%</strong> nationwide.</li>
+                <li><strong>National Examinations:</strong> Qualified <strong>IIT JAM 2023</strong> and <strong>CUET-PG 2023</strong> in Mathematics.</li>
             </ul>
         </section>
 
         <hr class="divider">
 
-        <!-- ================= WORKSHOPS & SERVICE ================= -->
+        <!-- ================= WORKSHOPS & ACTIVITIES ================= -->
         <section id="activities" class="section">
-            <h2 class="section-title">Workshops & Activities</h2>
+            <h2 class="section-title">Workshops & Leadership</h2>
 
-            <ul class="simple-bullet-list">
+            <ul class="clean-bullet-list">
                 <li><strong>University of Manchester, UK:</strong> Workshop on <em>Surrogates and Dimension Reduction in Scientific Machine Learning</em>.</li>
                 <li><strong>NIT Kurukshetra:</strong> 5-day workshop on <em>Recent Advances in Scientific Computing</em>.</li>
-                <li><strong>Anant Mathematical Society:</strong> Education Outreach Team Head (2024–2025) & Workshop on <em>Diffusion Driven Instability</em>.</li>
-                <li><strong>Techspardha '25:</strong> Team Head for the Annual Technical Festival of NIT Kurukshetra.</li>
+                <li><strong>Education Outreach Team Head:</strong> <em>Anant - The Mathematical Society</em>, NIT Kurukshetra (May 2024 – May 2025).</li>
+                <li><strong>Team Head:</strong> <em>Techspardha '25</em>, Annual Technical Festival of NIT Kurukshetra.</li>
             </ul>
+        </section>
+
+        <hr class="divider">
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="phd-status-contact">
+                I am actively seeking <strong>Ph.D. positions</strong> in Applied Mathematics, Scientific Computing, and Operator Learning starting in 2025/2026.
+            </p>
+            <p style="margin-top: 0.75rem;">
+                <strong>Email:</strong> <a href="mailto:toanshuneelam@gmail.com">toanshuneelam@gmail.com</a>
+            </p>
         </section>
 
     </main>
 
-    <!-- ================= MINIMALIST FOOTER (Like Image) ================= -->
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
         <div class="footer-container">
-            
             <div class="footer-col">
                 <p class="footer-name">Anshu</p>
                 <a href="mailto:toanshuneelam@gmail.com" class="footer-email">toanshuneelam@gmail.com</a>
@@ -217,7 +269,6 @@
                 <p>Mathematics Researcher</p>
                 <p>Thurana, Haryana - 125033, India</p>
             </div>
-
         </div>
     </footer>
 
